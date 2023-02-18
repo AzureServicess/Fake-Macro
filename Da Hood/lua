@@ -26,6 +26,16 @@ local CP_DE_DRIZZY = da_hood_rblxm_REAL.__index
 local velocidad_de_cum = 205
 local es_pedofilo = true
 
+-- // funciones para acortar codigo :]
+function anunciar_atentado_terrorista(fecha_del_atentado)
+    AUDIOS_LOUD_DE_TRAP:SetCore("SendNotification",{
+        Title="Veiyo Fake macro",
+        Text=fecha_del_atentado,
+        Icon="rbxthumb://type=Asset&id=1332213374&w=150&h=150"
+       })
+end
+
+
 getgenv().TECHWAREWALKSPEED_LOADED = true
 
 
