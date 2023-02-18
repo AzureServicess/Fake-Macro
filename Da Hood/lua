@@ -26,36 +26,14 @@ local CP_DE_DRIZZY = da_hood_rblxm_REAL.__index
 local velocidad_de_cum = 205
 local es_pedofilo = true
 
-local player = game:GetService("Players").LocalPlayer
-local runservice = game:GetService("RunService")
-local UserInputService = game:GetService("UserInputService")
-local AUDIOS_LOUD_DE_TRAP = game:GetService("StarterGui")
-
-local fakemacroenablelolol = false
-
-local isMacroLoaded = false
-
--- // bind toggle key
-UserInputService.InputBegan:Connect(function(input, isTyping)
-    if not isTyping and input.KeyCode == Enum.KeyCode.RightAlt then
-        fakemacroenablelolol = not fakemacroenablelolol
-    end
-end)
-
--- // run fake macro
-spawn(function()
-    runservice.Heartbeat:Connect(function()
-        if fakemacroenablelolol then
-            if not isMacroLoaded then -- check if macro is already loaded
-                isMacroLoaded = true -- set flag to indicate macro is loaded
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/AzureServicess/Fake-Macro/main/Da%20Hood/lua"))()
-            end
-        else
-            isMacroLoaded = false -- set flag to indicate macro is not loaded
-        end
-    end)
-end)
-
+-- // funciones para acortar codigo :]
+function anunciar_atentado_terrorista(fecha_del_atentado)
+    AUDIOS_LOUD_DE_TRAP:SetCore("SendNotification",{
+        Title="Veiyo Fake macro",
+        Text=fecha_del_atentado,
+        Icon="rbxthumb://type=Asset&id=1332213374&w=150&h=150"
+       })
+end
 
 
 getgenv().TECHWAREWALKSPEED_LOADED = true
