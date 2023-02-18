@@ -26,6 +26,8 @@ local CP_DE_DRIZZY = da_hood_rblxm_REAL.__index
 local velocidad_de_cum = 205
 local es_pedofilo = true
 
+
+
 getgenv().TECHWAREWALKSPEED_LOADED = true
 
 
