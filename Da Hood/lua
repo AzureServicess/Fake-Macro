@@ -29,7 +29,7 @@ local es_pedofilo = true
 -- // funciones para acortar codigo :]
 function anunciar_atentado_terrorista(fecha_del_atentado)
     AUDIOS_LOUD_DE_TRAP:SetCore("SendNotification",{
-        Title="Veiyo Fake macro",
+        Title="Veiyo's Fake Macro",
         Text=fecha_del_atentado,
         Icon="rbxthumb://type=Asset&id=1332213374&w=150&h=150"
        })
@@ -55,10 +55,10 @@ esvastica.KeyDown:Connect(function(el_impostor)
     elseif el_impostor:lower() == TeclasWS.tecla3:lower() then
         if es_pedofilo then
             es_pedofilo = false
-            anunciar_atentado_terrorista("speed off")
+            anunciar_atentado_terrorista("Speed Off")
         else
             es_pedofilo = true
-            anunciar_atentado_terrorista("speed on")
+            anunciar_atentado_terrorista("Speed On")
         end
     end
 end)
